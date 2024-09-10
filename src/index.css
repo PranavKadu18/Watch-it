@@ -14,5 +14,10 @@
     border-radius: 12px;
 }
 
+
+.box::-webkit-scrollbar
+{
+    display:none;
+}
 /* primaary : #1F1E24
 secondary : #6556CD */

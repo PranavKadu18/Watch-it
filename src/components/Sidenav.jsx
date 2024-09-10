@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const Sidenav = () => {
   return (
-    <div className="w-[23%] h-[100%] bg-[#1F1E24] p-10 border-r-[1px]">
+    <div className="w-[20%] h-[100%] bg-[#1F1E24] p-10 border-r-[1px]">
       <div className="flex gap-4 text-xl text-white">
         <i class=" text-[#6556CD] ri-tv-fill"></i>
         <h1 className="font-bold">SCSDB.</h1>
