@@ -19,5 +19,62 @@
 {
     display:none;
 }
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: #27272a;
+    background-image: none;
+    flex: 1;
+    padding: 0 0.5em;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-family: "Open Sans", sans-serif;
+}
+
+select::-ms-expand{
+    display: none;
+}
+
+select option{
+    font-size: 0.8em; /* Reduce the font size */
+    background: #1F1E24; /* Background of the options */
+    color: #fff; 
+    text-transform: lowercase;
+}
+
+.select{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 20em;
+    height: 2em;
+    line-height: 3;
+    background: #27272a;
+    overflow: hidden;
+    border-radius: 0.25em;
+}
+
+.select::after{
+    content: "\25BC";
+    position: absolute;
+    top: 1;
+    right: 0;
+    padding: 0 1em;
+    background: #27272a;
+    cursor: pointer;
+    pointer-events: none;
+    transition: 0.25s all ease;
+    
+}
+
+.select:hover::after{
+    color: #6556cd;
+}
 /* primaary : #1F1E24
 secondary : #6556CD */

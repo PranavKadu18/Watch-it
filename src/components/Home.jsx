@@ -4,6 +4,7 @@ import Nav from './Nav'
 import Header from './Header'
 import axios from '../utils/Axios'
 import CardHolder from './CardHolder'
+import Loading from './Loading'
 
 const Home = () => {
 
@@ -35,7 +36,7 @@ const Home = () => {
         !tv && gettv();
     })
 
-  return header && card && mov && tv && (
+  return (header && card && mov && tv)?(
     <div className='w-full h-screen bg-[#1F1E24] flex'>
         <Sidenav />
         <div className='w-[80%] h-full overflow-y-auto'>
@@ -45,7 +46,7 @@ const Home = () => {
         </div>
 
     </div>
-  )
+  ):(<Loading />)
 }
 
 export default Home
