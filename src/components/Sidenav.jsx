@@ -19,19 +19,31 @@ const Sidenav = () => {
             <i className="ri-fire-fill mr-1"></i>
             Trending
           </NavLink>
-          <NavLink className="p-3 rounded-md hover:bg-[#6556CD] hover:scale-110 hover:text-white transition-all ease-in-out duration-700">
+          <NavLink
+            to="/popular"
+            className="p-3 rounded-md hover:bg-[#6556CD] hover:scale-110 hover:text-white transition-all ease-in-out duration-700"
+          >
             <i className="ri-bard-fill mr-1"></i>
             Popular
           </NavLink>
-          <NavLink className="p-3 rounded-md hover:bg-[#6556CD] hover:scale-110 hover:text-white transition-all ease-in-out duration-700">
+          <NavLink
+            to="/movie"
+            className="p-3 rounded-md hover:bg-[#6556CD] hover:scale-110 hover:text-white transition-all ease-in-out duration-700"
+          >
             <i className="ri-movie-2-fill mr-1"></i>
             Movie
           </NavLink>
-          <NavLink className="p-3 rounded-md hover:bg-[#6556CD] hover:scale-110 hover:text-white transition-all ease-in-out duration-700">
+          <NavLink
+            to="/tv"
+            className="p-3 rounded-md hover:bg-[#6556CD] hover:scale-110 hover:text-white transition-all ease-in-out duration-700"
+          >
             <i className="ri-tv-2-fill mr-1"></i>
             Tv-Show
           </NavLink>
-          <NavLink className="p-3 rounded-md hover:bg-[#6556CD] hover:scale-110 hover:text-white transition-all ease-in-out duration-700">
+          <NavLink
+            to="/people"
+            className="p-3 rounded-md hover:bg-[#6556CD] hover:scale-110 hover:text-white transition-all ease-in-out duration-700"
+          >
             <i className="ri-team-fill mr-1"></i>
             People
           </NavLink>

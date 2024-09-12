@@ -46,7 +46,7 @@ const Trending = () => {
         <Nav />
         <Dropdown
           title="Category"
-          options={["all", "movies", "tv"]}
+          options={["all", "movie", "tv"]}
           func={(e) => {
             setcategory(e.target.value);
           }}
