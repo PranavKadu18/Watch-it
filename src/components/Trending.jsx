@@ -68,7 +68,7 @@ const Trending = () => {
          next={gettrending}
          hasMore={true}
          >
-          <Horizontalcard data={trending} />
+          <Horizontalcard data={trending} type={category} />
         </InfiniteScroll>
       </div>
     </div>

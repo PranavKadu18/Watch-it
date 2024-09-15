@@ -52,7 +52,7 @@ const People = () => {
              next={getperson}
              hasMore={true}
              >
-              <Horizontalcard data={person} />
+              <Horizontalcard data={person} type={'person'} />
             </InfiniteScroll>
           </div>
         </div>

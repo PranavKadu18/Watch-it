@@ -1,7 +1,10 @@
+import { Link } from "react-router-dom";
 import axios from "../utils/Axios";
 import React, { useEffect, useState } from "react";
 
 const Header = ({ data }) => {
+
+
   return (
     <div
       style={{
@@ -11,7 +14,7 @@ const Header = ({ data }) => {
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
-      className="mt-2 w-full h-[60vh] relative z-0"
+      className="mt-2 w-full h-[70vh] relative z-0"
     >
       <div className="absolute left-[5%] top-[55%] h-auto w-[70%]">
         <h1 className="font-bold text-zinc-200 text-5xl">
@@ -19,7 +22,7 @@ const Header = ({ data }) => {
         </h1>
         <p className="mt-2 text-zinc-200 text-sm">
           {data.overview.slice(0, 200)}...
-          <span className="text-blue-600">more</span>
+          <Link to={`/${data.media_type}/details/${data.id}`} className="text-blue-600">more</Link>
         </p>
         <div className="text-white mt-2">
           <i className=" text-yellow-300 ri-megaphone-fill"></i>{" "}

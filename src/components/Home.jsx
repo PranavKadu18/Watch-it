@@ -21,7 +21,7 @@ const Home = () => {
     }
 
     const getmovie = async() => {
-      const {data} = await axios.get(`/tv/airing_today`);
+      const {data} = await axios.get(`/trending/movie/day`);
       setmov(data.results);
     }
 

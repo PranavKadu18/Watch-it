@@ -41,7 +41,7 @@ const Sidenav = () => {
             Tv-Show
           </NavLink>
           <NavLink
-            to="/people"
+            to="/person"
             className="p-3 rounded-md hover:bg-[#6556CD] hover:scale-110 hover:text-white transition-all ease-in-out duration-700"
           >
             <i className="ri-team-fill mr-1"></i>

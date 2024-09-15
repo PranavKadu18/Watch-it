@@ -61,7 +61,7 @@ const Popular = () => {
            next={getpopular}
            hasMore={true}
            >
-            <Horizontalcard data={popular} />
+            <Horizontalcard data={popular} type={category} />
           </InfiniteScroll>
         </div>
       </div>
