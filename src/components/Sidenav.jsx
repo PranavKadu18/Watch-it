@@ -14,35 +14,35 @@ const Sidenav = () => {
         <nav className="flex flex-col mt-8 text-zinc-400 text-sm">
           <NavLink
             to="/trending"
-            className="p-3 rounded-md hover:bg-[#6556CD] hover:scale-110 hover:text-white transition-all ease-in-out duration-700"
+            className="p-3 rounded-md hover:bg-[#6556CD] hover:scale-110 hover:text-white transition-all ease-in-out duration-500"
           >
             <i className="ri-fire-fill mr-1"></i>
             Trending
           </NavLink>
           <NavLink
             to="/popular"
-            className="p-3 rounded-md hover:bg-[#6556CD] hover:scale-110 hover:text-white transition-all ease-in-out duration-700"
+            className="p-3 rounded-md hover:bg-[#6556CD] hover:scale-110 hover:text-white transition-all ease-in-out duration-500"
           >
             <i className="ri-bard-fill mr-1"></i>
             Popular
           </NavLink>
           <NavLink
             to="/movie"
-            className="p-3 rounded-md hover:bg-[#6556CD] hover:scale-110 hover:text-white transition-all ease-in-out duration-700"
+            className="p-3 rounded-md hover:bg-[#6556CD] hover:scale-110 hover:text-white transition-all ease-in-out duration-500"
           >
             <i className="ri-movie-2-fill mr-1"></i>
             Movie
           </NavLink>
           <NavLink
             to="/tv"
-            className="p-3 rounded-md hover:bg-[#6556CD] hover:scale-110 hover:text-white transition-all ease-in-out duration-700"
+            className="p-3 rounded-md hover:bg-[#6556CD] hover:scale-110 hover:text-white transition-all ease-in-out duration-500"
           >
             <i className="ri-tv-2-fill mr-1"></i>
             Tv-Show
           </NavLink>
           <NavLink
             to="/person"
-            className="p-3 rounded-md hover:bg-[#6556CD] hover:scale-110 hover:text-white transition-all ease-in-out duration-700"
+            className="p-3 rounded-md hover:bg-[#6556CD] hover:scale-110 hover:text-white transition-all ease-in-out duration-500"
           >
             <i className="ri-team-fill mr-1"></i>
             People
@@ -57,11 +57,17 @@ const Sidenav = () => {
           Website Information
         </h1>
         <nav className="flex flex-col mt-8 text-zinc-400 text-sm">
-          <NavLink className="p-3 rounded-md hover:bg-[#6556CD] hover:scale-110 hover:text-white transition-all ease-in-out duration-700">
+          <NavLink
+            to="/aboutus"
+            className="p-3 rounded-md hover:bg-[#6556CD] hover:scale-110 hover:text-white transition-all ease-in-out duration-500"
+          >
             <i className="ri-information-2-fill mr-1"></i>
             About-Us
           </NavLink>
-          <NavLink className="p-3 rounded-md hover:bg-[#6556CD] hover:scale-110 hover:text-white transition-all ease-in-out duration-700">
+          <NavLink
+            to="/contact"
+            className="p-3 rounded-md hover:bg-[#6556CD] hover:scale-110 hover:text-white transition-all ease-in-out duration-500"
+          >
             <i className="ri-phone-fill mr-1"></i>
             Contact
           </NavLink>

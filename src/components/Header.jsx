@@ -3,8 +3,6 @@ import axios from "../utils/Axios";
 import React, { useEffect, useState } from "react";
 
 const Header = ({ data }) => {
-
-
   return (
     <div
       style={{
@@ -22,7 +20,12 @@ const Header = ({ data }) => {
         </h1>
         <p className="mt-2 text-zinc-200 text-sm">
           {data.overview.slice(0, 200)}...
-          <Link to={`/${data.media_type}/details/${data.id}`} className="text-blue-600">more</Link>
+          <Link
+            to={`/${data.media_type}/details/${data.id}`}
+            className="text-blue-600"
+          >
+            more
+          </Link>
         </p>
         <div className="text-white mt-2">
           <i className=" text-yellow-300 ri-megaphone-fill"></i>{" "}

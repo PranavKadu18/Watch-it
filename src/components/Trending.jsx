@@ -5,7 +5,7 @@ import Dropdown from "./partials/Dropdown";
 import Loading from "./Loading";
 import axios from "../utils/Axios";
 import Horizontalcard from "./Horizontalcard";
-import InfiniteScroll from 'react-infinite-scroll-component';
+import InfiniteScroll from "react-infinite-scroll-component";
 
 const Trending = () => {
   const navigate = useNavigate();
@@ -13,11 +13,13 @@ const Trending = () => {
   const [category, setcategory] = useState("all");
   const [time, settime] = useState("day");
   const [trending, settrending] = useState([]);
-  const [page,setpage] = useState(1);
+  const [page, setpage] = useState(1);
 
   const gettrending = async () => {
-    const { data } = await axios.get(`/trending/${category}/${time}?page=${page}`);
-    settrending((prevdata) => ([...prevdata,...data.results]));
+    const { data } = await axios.get(
+      `/trending/${category}/${time}?page=${page}`
+    );
+    settrending((prevdata) => [...prevdata, ...data.results]);
     setpage(page + 1);
   };
 
@@ -25,7 +27,7 @@ const Trending = () => {
     settrending([]);
     setpage(1);
     gettrending();
-  }
+  };
 
   useEffect(() => {
     handle();
@@ -63,11 +65,11 @@ const Trending = () => {
 
       <div className="w-full min-h-screen">
         <InfiniteScroll
-         dataLength={trending.length} 
-         loader={<div>Loading...</div>}
-         next={gettrending}
-         hasMore={true}
-         >
+          dataLength={trending.length}
+          loader={<div>Loading...</div>}
+          next={gettrending}
+          hasMore={true}
+        >
           <Horizontalcard data={trending} type={category} />
         </InfiniteScroll>
       </div>
