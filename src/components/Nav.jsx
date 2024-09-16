@@ -39,7 +39,7 @@ const Nav = () => {
       <div className="w-[48%] max-h-[38vh] z-50 bg-white absolute top-[90%] overflow-auto rounded">
         {search.map((elem, idx) => (
           <NavLink
-            to={`/movie/details/${elem.id}`}
+            to={`/${elem.media_type}/details/${elem.id}`}
             key={idx}
             className="inline-block flex gap-8 items-center  font-semibold w-full p-4 bg-zinc-300 text-sm border-b-2 hover:bg-[#8e83d8]"
           >
