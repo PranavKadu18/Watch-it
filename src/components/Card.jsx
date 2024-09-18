@@ -33,7 +33,7 @@ const Card = ({ info, type }) => {
           {info.name || info.title || info.original_name}
         </h1>
         <p className="mt-2 ml-2 text-white text-[8px]">
-          {info.overview.slice(0, 90)}...
+          {info.overview && info.overview.slice(0, 40)}...
           <span className="text-blue-600">more</span>
         </p>
       </div>
